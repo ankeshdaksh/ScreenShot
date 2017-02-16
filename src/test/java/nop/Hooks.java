@@ -8,6 +8,7 @@ import utils.BrowserFactory;
 /**
  * Created by Acer on 11/12/2016.
  */
+//*****Screen Shot******
 public class Hooks {
 
     public Scenario scenario;
