@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5100151797,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 99,
+        "name": "customer wants to change the currency",
+        "description": "",
+        "id": "as-a-new-user-i-want-to-register;customer-wants-to-change-the-currency;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1570935905,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teaDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 132764284,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "user is on home page",
+            "match": {
+              "location": "MyStepdefs.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7752098882,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[text()\u003d\u0027€19.75\u0027]\"}\n  (Session info: chrome\u003d55.0.2883.95)\n  (Driver info: chromedriver\u003d2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform\u003dMac OS X 10.12.2 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 22 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027maheshs-MBP\u0027, ip: \u0027192.168.0.24\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.12.2\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir\u003d/var/folders/v5/hclj94b11g79wr8pvxm56vv80000gn/T/.org.chromium.Chromium.Z7q9ay}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d55.0.2883.95, platform\u003dMAC, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: efca8211ece28a6e41208c52e118676f\n*** Element info: {Using\u003dxpath, value\u003d//span[text()\u003d\u0027€19.75\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy16.getText(Unknown Source)\n\tat nop.ChangeCurrency.currencyEuro(ChangeCurrency.java:36)\n\tat nop.ChangeCurrency.changeTheCurrency(ChangeCurrency.java:29)\n\tat nop.MyStepdefs.heChangeTheCurrencyIntoAnotherCurrence(MyStepdefs.java:106)\n\tat ✽.When he change the currency \"Euro\" into another currence(src/test/resources/featurefile/etoe.feature:95)\n",
+              "status": "failed"
+            },
+            "line": 95,
+            "name": "he change the currency \"Euro\" into another currence",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Euro",
+                  "offset": 24
+                }
+              ],
+              "location": "MyStepdefs.heChangeTheCurrencyIntoAnotherCurrence(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 96,
+            "name": "he can be seen the changes in product prices",
+            "match": {
+              "location": "MyStepdefs.heCanBeSeenTheChangesInProductPrices()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 92,
+            "name": "@live"
+          }
+        ]
+      }
+    ],
+    "name": "As a new user I want to register",
+    "description": "so that I can enjoy the shopping",
+    "id": "as-a-new-user-i-want-to-register",
+    "keyword": "Feature",
+    "uri": "src/test/resources/featurefile/etoe.feature"
+  }
+]
